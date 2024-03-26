@@ -1,0 +1,7 @@
+#sidebar a.active {
+    color: #f9f8fe;
+    background: #7E90FE;
+}
+#sidebar a{
+    margin: 0px 2px;
+}

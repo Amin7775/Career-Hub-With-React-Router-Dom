@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 import ButtonLoader from "../../utilitis/ButtonLoader/ButtonLoader";
-
+import './Header.css'
 const Header = () => {
 
     const links = <>
-        <li><NavLink to={'/'}>Home</NavLink></li>
+        <li><NavLink to={'/'}><span className="text-lg">Home</span></NavLink></li>
         {/* <li><NavLink to={'/statistics'}>Statistics</NavLink></li> */}
-        <li><NavLink to={'/applied'}>Applied Jobs</NavLink></li>
-        <li><NavLink to={'/blog'}>Blog</NavLink></li>
+        <li><NavLink to={'/applied'}><span className="text-lg">Applied Jobs</span></NavLink></li>
+        <li><NavLink to={'/blog'}><span className="text-lg">Blog</span></NavLink></li>
     </>
 
     return (
@@ -24,7 +24,7 @@ const Header = () => {
     <a className="btn btn-ghost text-3xl">Career Hub</a>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1" id="sidebar">
       {links}
     </ul>
   </div>
