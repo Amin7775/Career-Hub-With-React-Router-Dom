@@ -36,7 +36,7 @@ const Job = ({ singleJob }) => {
       </div>
       <div>
 
-      <Link onClick={handleOnclick} className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] py-2 px-5 h-full mt-4"><span className="text-white font-semibold text-lg">View Details</span></Link>
+      <Link to={''} onClick={handleOnclick} className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] py-2 px-5 h-full mt-4"><span className="text-white font-semibold text-lg">View Details</span></Link>
       </div>
     </div>
   );
