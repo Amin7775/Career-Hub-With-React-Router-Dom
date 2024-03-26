@@ -3,7 +3,7 @@ import userImage from "./../../assets/images/user.png";
 
 const Banner = () => {
   return (
-    <div className="bg-[#f9f8fe] flex">
+    <div className="bg-[#f9f8fe] flex mb-5">
       <div className="container mx-auto flex mt-8">
         {/* text content */}
         <div className="w-1/2">
