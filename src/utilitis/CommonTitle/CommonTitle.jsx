@@ -1,6 +1,6 @@
 
 const CommonTitle = ({title,descripton}) => {
-    console.log(title, descripton)
+    // console.log(title, descripton)
     return (
         <div className="my-8">
             <h1 className="text-6xl text-center font-bold">{title}</h1>
