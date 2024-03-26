@@ -4,8 +4,8 @@ import CategoryList from "../CategoryList/CategoryList";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 
 const Home = () => {
-
-    const categoriesData = useLoaderData();
+    
+    const categoriesData = useLoaderData('');
     // console.log(categoriesData)
 
   return (
