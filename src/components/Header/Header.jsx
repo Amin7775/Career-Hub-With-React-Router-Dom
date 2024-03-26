@@ -1,16 +1,17 @@
 import { NavLink } from "react-router-dom";
+import ButtonLoader from "../../utilitis/ButtonLoader/ButtonLoader";
 
 const Header = () => {
 
     const links = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
-        <li><NavLink to={'/statistics'}>Statistics</NavLink></li>
+        {/* <li><NavLink to={'/statistics'}>Statistics</NavLink></li> */}
         <li><NavLink to={'/applied'}>Applied Jobs</NavLink></li>
         <li><NavLink to={'/blog'}>Blog</NavLink></li>
     </>
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-[#f9f8fe] pt-5">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -20,15 +21,16 @@ const Header = () => {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Career Hub</a>
+    <a className="btn btn-ghost text-3xl">Career Hub</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       {links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Start Applying</a>
+  <div className="navbar-end text-white">
+    {/* <a className="btn bg-gradient-to-r from-[#7E90FE] to-[#9873FF] "><span className="text-white">Start Applying</span></a> */}
+    <ButtonLoader text={'Start Applying'}></ButtonLoader>
   </div>
 </div>
     );
